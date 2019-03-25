@@ -1,0 +1,17 @@
+.sidenav-container {
+  height: 100%;
+}
+.sidenav {
+  width: 200px;
+  .mat-toolbar {
+    background: inherit;
+    &.mat-primary {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+.red-t{
+  color: red;
+}

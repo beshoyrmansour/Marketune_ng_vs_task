@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:07
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-beetle-car-front:before { content: "\f100"; }
+.flaticon-bus-front:before { content: "\f101"; }
+.flaticon-cabrio-car:before { content: "\f102"; }
+.flaticon-camaro-car-front:before { content: "\f103"; }
+.flaticon-car:before { content: "\f104"; }
+.flaticon-car-black-side-view-pointing-left:before { content: "\f105"; }
+.flaticon-car-city-model:before { content: "\f106"; }
+.flaticon-car-front:before { content: "\f107"; }
+.flaticon-car-muscle-design:before { content: "\f108"; }
+.flaticon-car-of-formula-1:before { content: "\f109"; }
+.flaticon-car-of-hatchback-model:before { content: "\f10a"; }
+.flaticon-car-suv:before { content: "\f10b"; }
+.flaticon-coupe-car:before { content: "\f10c"; }
+.flaticon-delivery-truck-front:before { content: "\f10d"; }
+.flaticon-impala-car-front:before { content: "\f10e"; }
+.flaticon-jeep:before { content: "\f10f"; }
+.flaticon-jeep-cabrio:before { content: "\f110"; }
+.flaticon-microbus:before { content: "\f111"; }
+.flaticon-mini-van:before { content: "\f112"; }
+.flaticon-minivan-car:before { content: "\f113"; }
+.flaticon-old-pickup:before { content: "\f114"; }
+.flaticon-pick-up:before { content: "\f115"; }
+.flaticon-rolls-royce-luxury-car-front:before { content: "\f116"; }
+.flaticon-sedan-car-front:before { content: "\f117"; }
+.flaticon-sedan-car-model:before { content: "\f118"; }
+.flaticon-sportive-car:before { content: "\f119"; }
+.flaticon-supercar:before { content: "\f11a"; }
+.flaticon-tractor-front:before { content: "\f11b"; }
+.flaticon-truck-front:before { content: "\f11c"; }
+.flaticon-van-black-transport-side-view-pointing-to-left:before { content: "\f11d"; }
+    
+    $font-Flaticon-beetle-car-front: "\f100";
+    $font-Flaticon-bus-front: "\f101";
+    $font-Flaticon-cabrio-car: "\f102";
+    $font-Flaticon-camaro-car-front: "\f103";
+    $font-Flaticon-car: "\f104";
+    $font-Flaticon-car-black-side-view-pointing-left: "\f105";
+    $font-Flaticon-car-city-model: "\f106";
+    $font-Flaticon-car-front: "\f107";
+    $font-Flaticon-car-muscle-design: "\f108";
+    $font-Flaticon-car-of-formula-1: "\f109";
+    $font-Flaticon-car-of-hatchback-model: "\f10a";
+    $font-Flaticon-car-suv: "\f10b";
+    $font-Flaticon-coupe-car: "\f10c";
+    $font-Flaticon-delivery-truck-front: "\f10d";
+    $font-Flaticon-impala-car-front: "\f10e";
+    $font-Flaticon-jeep: "\f10f";
+    $font-Flaticon-jeep-cabrio: "\f110";
+    $font-Flaticon-microbus: "\f111";
+    $font-Flaticon-mini-van: "\f112";
+    $font-Flaticon-minivan-car: "\f113";
+    $font-Flaticon-old-pickup: "\f114";
+    $font-Flaticon-pick-up: "\f115";
+    $font-Flaticon-rolls-royce-luxury-car-front: "\f116";
+    $font-Flaticon-sedan-car-front: "\f117";
+    $font-Flaticon-sedan-car-model: "\f118";
+    $font-Flaticon-sportive-car: "\f119";
+    $font-Flaticon-supercar: "\f11a";
+    $font-Flaticon-tractor-front: "\f11b";
+    $font-Flaticon-truck-front: "\f11c";
+    $font-Flaticon-van-black-transport-side-view-pointing-to-left: "\f11d";

@@ -1,0 +1,52 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar class="bg-primary text-white">Marketune</mat-toolbar>
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let vehicle of vehiclesList" class="justify-content-between">
+        <button mat-button matLine (click)="setSelectedVehicle(vehicle)"><span [class]="vehicle.styleClasses" (click)="openEditIconDialog(vehicle)"></span>
+          {{vehicle.label}}</button>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="handleEditVehicle(vehicle)">
+            <mat-icon>edit</mat-icon>
+            Edit vehicles information.
+          </button>
+          <button mat-menu-item (click)="handleTrackVehicle(vehicle)">
+            <mat-icon>gps_fixed</mat-icon>
+            Track the vehicle’s for past date.
+          </button>
+          <button mat-menu-item (click)="handleEnableDisableVehicle(vehicle)">
+            <mat-icon>notifications_off</mat-icon>
+            Enable/Disable vehicle.
+          </button>
+          <button mat-menu-item (click)="handleShareVehicle(vehicle)">
+            <mat-icon>share</mat-icon>
+            Share Location
+          </button>
+
+        </mat-menu>
+
+
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="bg-primary text-white" *ngIf="isHandset$ | async">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Marketune</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

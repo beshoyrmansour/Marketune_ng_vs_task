@@ -1,0 +1,42 @@
+<agm-map [latitude]="selectedVehicle.coords.latitude" [longitude]="selectedVehicle.coords.longitude">
+  <!-- <agm-marker [latitude]="selectedVehicle.coords.latitude" [longitude]="selectedVehicle.coords.longitude">
+    <agm-info-window>
+      <h3 *ngIf="selectedVehicle.coords.accuracy">accuracy : {{selectedVehicle.coords.accuracy}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.altitude">altitude : {{selectedVehicle.coords.altitude}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.altitudeAccuracy">altitudeAccuracy : {{selectedVehicle.coords.altitudeAccuracy}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.heading">heading : {{selectedVehicle.coords.heading}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.speed">speed : {{selectedVehicle.coords.speed}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.latitude">latitude : {{selectedVehicle.coords.latitude}}</h3>
+      <h3 *ngIf="selectedVehicle.coords.longitude">longitude : {{selectedVehicle.coords.longitude}}</h3>
+    </agm-info-window>
+  </agm-marker> -->
+  <agm-marker *ngFor="let vehicle of vehiclesList" [latitude]="vehicle.coords.latitude"
+    [longitude]="vehicle.coords.longitude">
+    <agm-info-window>
+     
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title *ngIf="vehicle.label">{{vehicle.label}}</mat-card-title>
+          <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+          <p *ngIf="vehicle.coords.accuracy">accuracy : {{vehicle.coords.accuracy}}</p>
+          <p *ngIf="vehicle.coords.altitude">altitude : {{vehicle.coords.altitude}}</p>
+          <p *ngIf="vehicle.coords.altitudeAccuracy">altitudeAccuracy :
+            {{vehicle.coords.altitudeAccuracy}}</p>
+          <p *ngIf="vehicle.coords.heading">heading : {{vehicle.coords.heading}}</p>
+          <p *ngIf="vehicle.coords.speed">speed : {{vehicle.coords.speed}}</p>
+          <p *ngIf="vehicle.coords.latitude">latitude : {{vehicle.coords.latitude}}</p>
+          <p *ngIf="vehicle.coords.longitude">longitude : {{vehicle.coords.longitude}}</p>
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>
